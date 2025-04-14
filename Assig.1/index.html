@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Email" required>
+        <p id="emailError" class="error"></p>
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" placeholder="Password" required>
+        <p id="passwordError" class="error"></p>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <p class="register-link">Don't have an account? <a href="#" id="showRegister">Register</a></p>
+  </div>
+
+  <div class="register-box" style="display: none;">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <div class="form-group">
+        <input type="text" id="username" placeholder="Username" required>
+        <p id="usernameError" class="error"></p>
+      </div>
+      <div class="form-group">
+        <input type="email" id="registerEmail" placeholder="Email" required>
+        <p id="registerEmailError" class="error"></p>
+      </div>
+      <div class="form-group">
+        <input type="password" id="registerPassword" placeholder="Password" required>
+        <p id="registerPasswordError" class="error"></p>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+    <p class="login-link">Already have an account? <a href="#" id="showLogin">Login</a></p>
+  </div>
+
+  <script src="./login.js"></script>
+</body>
+</html>
